@@ -1,12 +1,12 @@
 import streamlit as st
 import joblib
+from pathlib import Path
 
 # -----------------------------
 # Load Model and TF-IDF
 # -----------------------------
 tfidf = joblib.load("tfidf_vectorizer.pkl")
 lr_model = joblib.load("logistic_regression_model.pkl")
-
 
 # -----------------------------
 # Page Configuration
