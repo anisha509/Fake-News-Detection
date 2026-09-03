@@ -5,9 +5,10 @@ from pathlib import Path
 # -----------------------------
 # Load Model and TF-IDF
 # -----------------------------
-tfidf = joblib.load("tfidf_vectorizer.pkl")
-lr_model = joblib.load("logistic_regression_model.pkl")
+BASE_DIR = Path(__file__).resolve().parent
 
+tfidf = joblib.load(BASE_DIR / "tfidf_vectorizer.pkl")
+lr_model = joblib.load(BASE_DIR / "logistic_regression_model.pkl")
 # -----------------------------
 # Page Configuration
 # -----------------------------
